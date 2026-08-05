@@ -1,6 +1,6 @@
 # Spotify Behavioral Analytics Dashboard
 
-End-to-end analytics project using Python, MySQL, SQL, and Power BI to transform Spotify Extended Streaming History data into actionable behavioral insights.
+End-to-end analytics project using SQL (MySQL Workbench), Power BI, and Python to transform Spotify Extended Streaming History data into actionable behavioral insights.
 
 ## Overview
 
