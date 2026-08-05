@@ -1,19 +1,46 @@
 # Spotify Behavioral Analytics Dashboard
 
-End-to-end analytics project using SQL (MySQL Workbench), Power BI, and Python to transform Spotify Extended Streaming History data into actionable behavioral insights.
-
 ## Overview
 
-This project analyzes Spotify Extended Streaming History data to understand listening behavior, user engagement, and music preference trends.
+End-to-end analytics project using SQL (MySQL Workbench), Power BI, and Python to transform Spotify Extended Streaming History data into actionable behavioral insights.
 
-The project follows an end-to-end analytics pipeline:
+This project analyzes listening behavior, engagement patterns, and music preferences by building an analytics pipeline from raw streaming data to an interactive dashboard.
 
-1. Data preparation and cleaning using Python
-2. Relational database design and storage using MySQL
-3. SQL analysis to generate insights
-4. Interactive dashboard development using Power BI
+---
 
-The final dashboard provides insights into listening patterns, top artists, yearly and monthly trends, and user engagement metrics.
+## Business Problem
+
+Streaming platforms generate large amounts of behavioral data, but raw listening history is difficult to interpret without cleaning, structuring, and visualization.
+
+This project explores how analytics tools can transform raw Spotify listening records into insights such as:
+
+- Listening trends over time
+- Most played artists
+- User engagement patterns
+- Skip behavior
+- Overall listening habits
+
+---
+
+## Solution
+
+The project follows an end-to-end analytics workflow:
+
+Spotify Extended Streaming History
+|
+v
+Python Data Cleaning
+|
+v
+MySQL Database Design
+|
+v
+SQL Analytics Queries
+|
+v
+Power BI Dashboard
+
+The final dashboard provides interactive insights into listening behavior and engagement metrics.
 
 ---
 
@@ -27,68 +54,50 @@ The final dashboard provides insights into listening patterns, top artists, year
 
 ---
 
-## Project Objectives
+## Database Design
 
-* Analyze personal Spotify listening behavior and engagement patterns
-* Identify top artists and listening trends over time
-* Transform raw streaming data into structured relational tables
-* Build an interactive dashboard to communicate analytical insights
+The relational database consists of:
 
----
+- Songs
+- Listening History
+- Calendar
+- Spotify Staging
 
-## Data Pipeline
-
-### 1. Data Cleaning & Preparation (Python)
-
-* Processed Spotify Extended Streaming History JSON files
-* Cleaned and transformed raw streaming records
-* Created calculated fields including:
-
-  * Listening minutes
-  * Year
-  * Month
-  * Season
-  * Semester
-
-### 2. Database Design (MySQL)
-
-Created a relational database structure containing:
-
-* Songs table
-* Listening history table
-* Calendar table
-
-Used SQL to manage relationships and prepare data for analysis.
-
-### 3. Data Visualization (Power BI)
-
-Built an interactive Spotify analytics dashboard featuring:
-
-* Total listening hours
-* Total plays
-* Unique songs
-* Skip rate
-* Top 10 artists by listening time
-* Yearly listening trends
-* Monthly listening trends
+The database structure supports analytical queries for trends, artist performance, and engagement metrics.
 
 ---
 
-## Database Structure
+## Dashboard Features
 
-The database follows a relational model:
+The Power BI dashboard includes:
 
+- Total listening hours
+- Total plays
+- Unique songs
+- Skip rate
+- Top 10 artists by listening time
+- Yearly listening trends
+- Monthly listening trends
+
+---
+
+## Project Structure
+
+```text
+spotify-behavioral-analytics/
+
+├── sql/
+│   ├── create_database.sql
+│   ├── create_tables.sql
+│   └── analysis_queries.sql
+│
+├── data/
+│   └── README.md
+│
+├── Spotify Listening Analytics Model.pbix
+├── Spotify Listening Analytics Model.png
+└── README.md
 ```
-Songs
- |
- |
-Listening History
- |
- |
-Calendar
-```
-
----
 
 ## Dashboard Preview
 
@@ -100,8 +109,24 @@ Power BI dashboard analyzing Spotify listening behavior and trends.
 
 ## Data Privacy
 
-This project uses Spotify Extended Streaming History data.
+Raw Spotify streaming files are excluded because they contain personal listening information.
 
-Raw Spotify streaming files are excluded from this repository because they contain personal listening information.
+The dataset was cleaned using Python, transformed into relational tables using SQL, and analyzed through Power BI.
 
-The dataset was cleaned and transformed using Python before being loaded into MySQL for SQL analysis and Power BI visualization.
+---
+
+## Future Improvements
+
+Potential enhancements include:
+
+- Build automated data pipelines for future Spotify exports
+- Add additional user behavior metrics
+- Create predictive models for listening preferences
+- Expand dashboard filtering capabilities
+
+---
+
+## Author
+
+Esom Nwachukwu
+
