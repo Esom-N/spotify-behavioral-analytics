@@ -94,6 +94,8 @@ Calendar
 
 Power BI dashboard analyzing Spotify listening behavior and trends.
 
+![Spotify Dashboard](spotify_dashboard.png)
+
 
 
 ---
