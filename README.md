@@ -26,20 +26,21 @@ This project explores how analytics tools can transform raw Spotify listening re
 
 The project follows an end-to-end analytics workflow:
 
+```text
 Spotify Extended Streaming History
-|
-v
+          |
+          v
 Python Data Cleaning
-|
-v
+          |
+          v
 MySQL Database Design
-|
-v
+          |
+          v
 SQL Analytics Queries
-|
-v
+          |
+          v
 Power BI Dashboard
-
+```
 The final dashboard provides interactive insights into listening behavior and engagement metrics.
 
 ---
@@ -81,6 +82,15 @@ The Power BI dashboard includes:
 
 ---
 
+## Key Metrics
+
+- 69,763 Spotify listening records analyzed
+- 1,390+ total listening hours
+- Listening behavior analyzed across multiple years
+- Engagement metrics including plays, unique songs, and skip rate
+
+---
+
 ## Project Structure
 
 ```text
@@ -98,6 +108,8 @@ spotify-behavioral-analytics/
 ├── Spotify Listening Analytics Model.png
 └── README.md
 ```
+
+---
 
 ## Dashboard Preview
 
@@ -129,4 +141,3 @@ Potential enhancements include:
 ## Author
 
 Esom Nwachukwu
-
